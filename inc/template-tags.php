@@ -182,20 +182,21 @@ if( function_exists('acf_add_options_page') ) {
 /**
  * Custom Post Typs
  */
-// function downloads_cpt() {
-// 	register_post_type( 'downloads',
-// 		array(
-// 			'labels' => array(
-// 				'name' => __( 'Downloads' ),
-// 				'singular_name' => __( 'Download' )
-// 			),
-// 			'public' => true,
-// 			'has_archive' => false,
-// 			'supports' => array('title'),
-// 		)
-// 	);
-// }
-// add_action( 'init', 'downloads_cpt' );
+function luxxy_cpts() {
+	register_post_type( 'villas',
+		array(
+			'labels' => array(
+				'name' => __( 'Villas' ),
+				'singular_name' => __( 'Villas' )
+			),
+			'public' => true,
+			'has_archive' => false,
+			'supports' => array('title', 'editor', 'thumbnail'),
+			'menu_icon'   => 'dashicons-building'
+		)
+	);
+}
+add_action( 'init', 'luxxy_cpts' );
 
 
 /**

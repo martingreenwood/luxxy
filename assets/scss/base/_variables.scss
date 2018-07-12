@@ -10,19 +10,30 @@ $bp-larger-than-desktop   : "min-width: 1160px" !default;
 $bp-smaller-than-desktop   : "max-width: 1160px" !default;
 $bp-larger-than-desktophd : "min-width: 1360px" !default;
 
+$bright-purple: #6955b7;
+$purple: #4a4758;
+$deep-purple: #2f2c3f;
+$dark-blue: #002c46;
+$pale-blue: #99c6d6;
+$other-blue: #5ca4be;
+$lilac: #857dae;
+$other-lilac: #71699a;  
+$pale-lilac: #cbc7db;
+$lilac-grey: #e7e5ef;
+
 // Colors
-$light-grey: #eeeeee !default;
+$light-grey: #f2f2f2 !default;
 $dark-grey: #3d3d3d !default;
 $primary-color: #4a3c77 !default;
 $secondary-color: #784987 !default;
 $border-color: #eee !default;
-$link-color: $primary-color !default;
-$font-color: $dark-grey !default;
+$link-color: $dark-blue !default;
+$font-color: $dark-blue !default;
 
 // Typography
 
-$base-font: "ZonaPro-Regular", Helvetica, Arial, sans-serif !default;
-$heading-font: "ZonaPro-SemiBold", Helvetica, Arial, sans-serif !default;
+$base-font: "proxima-nova", Helvetica, Arial, sans-serif !default;
+$heading-font: "proxima-nova", Helvetica, Arial, sans-serif !default;
 
 $font-family: $base-font !default;
 $heading-font-family: $heading-font !default;
@@ -37,4 +48,4 @@ $column-width: 100 / $total-columns !default; // calculates individual column wi
 $column-margin: 4% !default; // space between columns
 
 // Misc
-$global-radius: 4px !default;
+$global-radius: 8px !default;

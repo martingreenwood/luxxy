@@ -28,7 +28,7 @@
 			<div class="row">
 
 				<div class="site-branding">
-					<?php the_custom_logo(); ?>
+					<h1><?php echo bloginfo( 'name' ); ?></h1>
 				</div>
 
 				<nav id="site-navigation" class="main-navigation">

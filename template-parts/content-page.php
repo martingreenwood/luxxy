@@ -9,12 +9,20 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('row'); ?>>
 
-	<div class="entry-content">
+	<?php $content_image = get_field( 'content_image' ); ?>
+
+	<div class="entry-content columns <?php if ( $content_image ) : ?>seven<?php else: ?>twelve<?php endif; ?>">
 		<?php
 			the_content();
 		?>
 	</div>
+
+	<?php if ( $content_image ) : ?>
+	<div class="entry-image columns five">
+		<img src="<?php echo $content_image['url'] ?>" alt="">
+	</div>
+	<?php endif; ?>
 
 </article>

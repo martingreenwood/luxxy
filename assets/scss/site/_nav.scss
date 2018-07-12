@@ -25,26 +25,25 @@
 				&:hover {
 
 					a {
-						background-color: $primary-color;
-						border-color: $primary-color !important;
 					}
 
 					.sub-menu {
-						background-color: $primary-color;
 					}
 				}
 
 				a {
 					text-decoration: none;
 					color: white;
-					font-family: $nav-font-family;
 					padding: 10px 15px;
+					letter-spacing: 1px;
+					font-weight: 300;
 				}
 
 				&:last-of-type {
 					a {
-						text-transform: uppercase;
-						border: 1px solid white; 
+						border: 1px solid white;
+						border-radius: $global-radius; 
+						background-color: rgba(255,255,255,0.2);
 					}
 				}
 			}

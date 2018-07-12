@@ -9,8 +9,8 @@
 */
 
 #prefooter {
-	padding: 60px 0;
-	background-color: $primary-color;
+	padding: 8rem 0;
+	background-color: $purple;
 	color: white;
 
 	h2, a {
@@ -19,10 +19,52 @@
 
 	.company-info {
 
-		img, svg {
-			margin-bottom: 20px;
-			width: 75%;
-			display: inline-block;
+		h1 {
+			font-size: 2.8rem;
+			margin-bottom: 4rem;
+			color: white;
+			font-weight: 900;
+		}
+
+		p {
+			margin-bottom: 3rem;
+			font-size: 1.4rem;
+		}
+
+		.contact {
+			font-size: 1.4rem;
+			 
+			li {
+				margin: 0;
+				font-weight: 600;
+
+				a {
+					color: $pale-blue;
+					font-weight: 300;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.social {
+			margin-top: 4rem;
+
+			li {
+				display: inline-block;
+				vertical-align: top;
+
+				a {
+					background-color: white;
+					color: $purple;
+					text-decoration: none;
+				}
+			}
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
 		}
 
 		a {
@@ -30,71 +72,49 @@
 		}
 	}
 
-	.stories {
+	.news {
 
-		.story {
-			margin-bottom: 20px;
+		h3 {
+			font-size: 2.8rem;
+			margin-bottom: 4rem;
+			color: white;
+			font-weight: 900;
+		}
 
-			h4 {
-				margin-bottom: 0;
-				font-size: 18px;
-				font-family: $heading-font;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				margin-bottom: .5rem;
 				color: white;
+				font-size: 1.4rem;
+				list-style: inside disc;
+
+				a {
+					text-decoration: none;
+				}
 			}
 		}
 	}
 }
 
 #colophon {
-	font-size: 13px;
-	padding: 60px 0;
-	background-color: $secondary-color;
-	display: block;
+	font-size: 1.4rem;
+	padding: 4rem 0;
+	background-color: $deep-purple;
 	color: white;
 
-	.footer-nav {
+	.copyright {
 
-		ul {
-			list-style: none;
-			float: left;
-			margin-bottom: 0;
-			margin-top: 30px;
-
-			@media (#{$bp-larger-than-phablet}) {
-				float: right;
-				margin-top: 0;
-			}
-
-			li {
-				display: inline-block;
-				margin: 0 10px 0 0;
-				
-				@media (#{$bp-larger-than-phablet}) {
-					margin: 0 0 10px 10px;
-				}
-
-				a {
-					text-decoration: none;
-					color: inherit;
-				}
-			}
-		}
-	}
-
-	.acred {
-		float: right;
-		float: right;
-		width: 100%;
-
-		ul {
-			list-style: none;
-			margin: 0;
+		&:last-of-type {
 			text-align: right;
-			margin-top: 15px;
 
-			li {
-				margin: 0;
-				width: 55px;
+			a {
+				text-decoration: none;
+				color: $pale-blue;
+				font-weight: 900;
 			}
 		}
 	}

@@ -1,0 +1,231 @@
+{
+    "key": "group_5b169b52822f1",
+    "title": "VILLA INFO",
+    "fields": [
+        {
+            "key": "field_5b169b5e587c0",
+            "label": "Villa Location",
+            "name": "villa_location",
+            "type": "text",
+            "instructions": "Where is the villa located?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5b3b7b76879e2",
+            "label": "Type",
+            "name": "type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Villa": "Villa",
+                "Apartment": "Apartment",
+                "Pool House": "Pool House"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5b3b7bfe879e3",
+            "label": "Meals",
+            "name": "meals",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Self-Catering": "Self-Catering",
+                "All Inclusive": "All Inclusive"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5b3b7c2f879e4",
+            "label": "House Rules",
+            "name": "house_rules",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5b3b7c4c879e5",
+            "label": "Location Type",
+            "name": "location_type",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Beach side": "Beach side",
+                "Near the sea": "Near the sea",
+                "City centre": "City centre",
+                "Countryside": "Countryside"
+            },
+            "allow_custom": 1,
+            "save_custom": 1,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5b3b7d39879e6",
+            "label": "General",
+            "name": "general",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Air Conditioning": "Air Conditioning",
+                "Hair Dryer": "Hair Dryer",
+                "Internet": "Internet",
+                "Linens Provided": "Linens Provided",
+                "Parking": "Parking",
+                "Towels Provided": "Towels Provided",
+                "Washing Machine": "Washing Machine",
+                "Ceiling Fans": "Ceiling Fans",
+                "Heating": "Heating",
+                "Iron & Board": "Iron & Board",
+                "Living Room": "Living Room",
+                "Telephione": "Telephione",
+                "Tumble Dryer": "Tumble Dryer"
+            },
+            "allow_custom": 1,
+            "save_custom": 1,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5b3b7dbe2da12",
+            "label": "Kitchen",
+            "name": "kitchen",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Dishwasher": "Dishwasher",
+                "Fitted kitchen units": "Fitted kitchen units",
+                "Oven": "Oven",
+                "Fridge": "Fridge",
+                "Freezer": "Freezer",
+                "Microwave": "Microwave",
+                "Pantry Items": "Pantry Items",
+                "Hob": "Hob"
+            },
+            "allow_custom": 1,
+            "save_custom": 1,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5b3b7e292da13",
+            "label": "Dining",
+            "name": "dining",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Highchair": "Highchair",
+                "Seating for 4 people": "Seating for 4 people",
+                "Seating for 6 people": "Seating for 6 people",
+                "Seating for 8+ people": "Seating for 8+ people",
+                "dining area": "dining area"
+            },
+            "allow_custom": 1,
+            "save_custom": 1,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 0,
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "villas"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1531131094
+}

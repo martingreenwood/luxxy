@@ -1,0 +1,100 @@
+{
+    "key": "group_5b167c227fa4b",
+    "title": "Banner Content",
+    "fields": [
+        {
+            "key": "field_5b167cabb27cd",
+            "label": "Banner Image",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The banner Image is controlled using the 'Feature Image' box over to the right of the page.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5b167c29b27cb",
+            "label": "Banner Text",
+            "name": "banner_text",
+            "type": "textarea",
+            "instructions": "Enter the test you would like to appear in the middle of the banner - no need for HTML this will be auto added to a H1 although line breaks are honoured.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5b167c75b27cc",
+            "label": "Banner Link",
+            "name": "banner_link",
+            "type": "page_link",
+            "instructions": "Choose the page you want to link to within the banner - if no link is needed leave it blank.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "page"
+            ],
+            "taxonomy": [],
+            "allow_null": 1,
+            "allow_archives": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_5b168252481ee",
+            "label": "Banner Link Text",
+            "name": "banner_link_text",
+            "type": "text",
+            "instructions": "Choose the page you want to link to within the banner - if no link is needed leave it blank.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1528201834
+}

@@ -56,7 +56,6 @@
 	right: 0;
 	top: 0;
 	z-index: 51;
-	height: 234px;
 	background-color: transparent;
 
 	-webkit-transition: top .5s linear 0s, background 0.5s linear 0s;
@@ -66,35 +65,16 @@
 	transition: top .5s linear 0s, background 0.5s linear 0s;
 
 	.logo {
-		&.small {
-			display: none;
-		}
-		&.desktop {
-			display: block;
-		}
-	}
-
-	&.hidden {
-		top: -234px;
-		-webkit-transition: top .5s linear 0s, background 0.5s linear 0s;
-		-moz-transition: top .5s linear 0s, background 0.5s linear 0s;
-		-ms-transition: top .5s linear 0s, background 0.5s linear 0s;
-		-o-transition: top .5s linear 0s, background 0.5s linear 0s;
-		transition: top .5s linear 0s, background 0.5s linear 0s;
 	}
 
 	&.fixed {
-		position: fixed;
-		top: 0px;
 		background-color: #fff;
 		z-index: 102;
-		height: 96px;
 
 		.toggled {
 			.hamburger {
 
 				.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-					background-color: white;
 				}
 			}
 		}
@@ -105,65 +85,65 @@
 
 				li {
 
+					&:last-of-type a {
+						border-color: white;
+						background-color: $pale-blue;
+						color: white;
+					}
+
 					&:hover {
 
 						a {
-							background-color: transparent;
-							border-color: black !important;
-						}
-
-						.sub-menu {
-							background-color: white;
 						}
 					}
 
 					a {
-						color: black;
-						border-color: black;
+						color: $dark-blue;
 					}
 
 					ul {
-						background: white;
 					}
 				}
 			}
 		}
 
-		.logo {
-			&.small {
-				display: block;
-			}
-			&.desktop {
-				display: none;
-			}
-		}
-
 		.row {
 			.main-navigation {
-				margin-top: 7px;
+			}
+
+			.site-branding {
+
+				h1 {
+					color: $lilac;
+				}
 			}
 
 			.hamburger {
-				margin-top: 8px;
 			}
 
 			.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-				background-color: black;
 			}
 		}
 	}
 
 	.row {
-		padding: 30px 0;
+		padding: 6rem 0 3rem 0;
+		border-bottom: 1px solid white;
 
 		.site-branding {
 			float: left;
-			width: 235px;
+
+			h1 {
+				margin-bottom: 0;
+				font-weight: 900;
+				font-size: 3rem;
+				color: white;
+			}
 		}
 
 		.main-navigation {
 			float: right;
-			margin-top: 120px;
+			margin-top: 7px;
 		}
 	}
 }

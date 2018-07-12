@@ -1,0 +1,43 @@
+{
+    "key": "group_5b169e608131d",
+    "title": "Feature Villa",
+    "fields": [
+        {
+            "key": "field_5b169e69c62ae",
+            "label": "Feature Villa",
+            "name": "feature_villa",
+            "type": "true_false",
+            "instructions": "Feature this villa on the homepage of the website?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "villas"
+            }
+        ]
+    ],
+    "menu_order": -1,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1528209052
+}
