@@ -79,12 +79,96 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/acf-json\/group_5b68160d67fc5.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5b68160d67fc5-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_5b6821be37820.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5b6821be37820-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_5b68298cdc970.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5b68298cdc970-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/archive.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/archive.php",
 		"oF": 0
+		},
+	"\/assets\/img\/bathrooms-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/bathrooms-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/bathrooms.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/bathrooms.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/bed-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/bed-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/bed.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/bed.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/chevron-down-solid.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/chevron-down-solid.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/chevron-up-solid.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/chevron-up-solid.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/assets\/img\/left-chevron.svg": {
 		"ft": 2097152,
@@ -96,11 +180,51 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/img\/nights.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/nights.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/people.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/people.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/img\/right-chevron.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/img\/right-chevron.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/type.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/type.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/wcs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/wcs.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -134,6 +258,26 @@
 		"oAP": "\/assets\/js\/customizer-min.js",
 		"oF": 1,
 		"sC": 0,
+		"tS": 0
+		},
+	"\/assets\/js\/handleCounter-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/handleCounter-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/js\/handleCounter.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/handleCounter-min.js",
+		"oF": 0,
+		"sC": 3,
 		"tS": 0
 		},
 	"\/assets\/js\/map.js": {
@@ -1286,6 +1430,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/template-parts\/page-villa-owner.php",
+		"oF": 0
+		},
+	"\/templates\/properties.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/templates\/properties.php",
 		"oF": 0
 		}
 	},

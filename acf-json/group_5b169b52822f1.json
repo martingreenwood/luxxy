@@ -3,6 +3,169 @@
     "title": "VILLA INFO",
     "fields": [
         {
+            "key": "field_5b6c5519de66c",
+            "label": "",
+            "name": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": []
+        },
+        {
+            "key": "field_5b3b7b76879e2",
+            "label": "Type",
+            "name": "type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "16.666",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Villa": "Villa",
+                "Apartment": "Apartment",
+                "Pool House": "Pool House"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5b68128455c72",
+            "label": "People \/ Sleeps",
+            "name": "people",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "16.666",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5b68127555c71",
+            "label": "# of Bedrooms",
+            "name": "bedrooms",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "16.666",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5b68129555c73",
+            "label": "# of Bathrooms",
+            "name": "bathrooms",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "16.666",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5b68138455c74",
+            "label": "# of WCs",
+            "name": "wcs",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "16.666",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5b68139755c76",
+            "label": "Min Stay (nights)",
+            "name": "min_stay",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "16.666",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5b6c5540de66d",
+            "label": "",
+            "name": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": []
+        },
+        {
             "key": "field_5b169b5e587c0",
             "label": "Villa Location",
             "name": "villa_location",
@@ -20,32 +183,6 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_5b3b7b76879e2",
-            "label": "Type",
-            "name": "type",
-            "type": "select",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "Villa": "Villa",
-                "Apartment": "Apartment",
-                "Pool House": "Pool House"
-            },
-            "default_value": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "ajax": 0,
-            "return_format": "value",
-            "placeholder": ""
         },
         {
             "key": "field_5b3b7bfe879e3",
@@ -95,7 +232,7 @@
             "key": "field_5b3b7c4c879e5",
             "label": "Location Type",
             "name": "location_type",
-            "type": "checkbox",
+            "type": "taxonomy",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -104,24 +241,20 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "Beach side": "Beach side",
-                "Near the sea": "Near the sea",
-                "City centre": "City centre",
-                "Countryside": "Countryside"
-            },
-            "allow_custom": 1,
-            "save_custom": 1,
-            "default_value": [],
-            "layout": "horizontal",
-            "toggle": 0,
-            "return_format": "value"
+            "taxonomy": "post_tag",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 0,
+            "return_format": "object",
+            "multiple": 0,
+            "allow_null": 0
         },
         {
-            "key": "field_5b3b7d39879e6",
-            "label": "General",
-            "name": "general",
-            "type": "checkbox",
+            "key": "field_5b6c5665de66e",
+            "label": "Rooms",
+            "name": "rooms",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -130,33 +263,118 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "Air Conditioning": "Air Conditioning",
-                "Hair Dryer": "Hair Dryer",
-                "Internet": "Internet",
-                "Linens Provided": "Linens Provided",
-                "Parking": "Parking",
-                "Towels Provided": "Towels Provided",
-                "Washing Machine": "Washing Machine",
-                "Ceiling Fans": "Ceiling Fans",
-                "Heating": "Heating",
-                "Iron & Board": "Iron & Board",
-                "Living Room": "Living Room",
-                "Telephione": "Telephione",
-                "Tumble Dryer": "Tumble Dryer"
-            },
-            "allow_custom": 1,
-            "save_custom": 1,
-            "default_value": [],
-            "layout": "horizontal",
-            "toggle": 0,
-            "return_format": "value"
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5b6c5670de66f",
+                    "label": "Room Type",
+                    "name": "room_type",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "field_5b6c5687de670",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_5b6c5687de670",
+                            "label": "Name",
+                            "name": "name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5b6c63ccce0f7",
+                            "label": "Room",
+                            "name": "room",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5b6c63f2ce0f8",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5b6c63f9ce0f9",
+                                    "label": "What's Included \/Features",
+                                    "name": "features",
+                                    "type": "textarea",
+                                    "instructions": "comma separated list.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
-            "key": "field_5b3b7dbe2da12",
-            "label": "Kitchen",
-            "name": "kitchen",
-            "type": "checkbox",
+            "key": "field_5b6c64961cda6",
+            "label": "Notes",
+            "name": "notes",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -165,49 +383,11 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "Dishwasher": "Dishwasher",
-                "Fitted kitchen units": "Fitted kitchen units",
-                "Oven": "Oven",
-                "Fridge": "Fridge",
-                "Freezer": "Freezer",
-                "Microwave": "Microwave",
-                "Pantry Items": "Pantry Items",
-                "Hob": "Hob"
-            },
-            "allow_custom": 1,
-            "save_custom": 1,
-            "default_value": [],
-            "layout": "horizontal",
-            "toggle": 0,
-            "return_format": "value"
-        },
-        {
-            "key": "field_5b3b7e292da13",
-            "label": "Dining",
-            "name": "dining",
-            "type": "checkbox",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "Highchair": "Highchair",
-                "Seating for 4 people": "Seating for 4 people",
-                "Seating for 6 people": "Seating for 6 people",
-                "Seating for 8+ people": "Seating for 8+ people",
-                "dining area": "dining area"
-            },
-            "allow_custom": 1,
-            "save_custom": 1,
-            "default_value": [],
-            "layout": "horizontal",
-            "toggle": 0,
-            "return_format": "value"
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
         }
     ],
     "location": [
@@ -219,13 +399,13 @@
             }
         ]
     ],
-    "menu_order": 0,
-    "position": "acf_after_title",
+    "menu_order": 1,
+    "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1531131094
+    "modified": 1533830310
 }

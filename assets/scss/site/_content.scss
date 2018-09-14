@@ -10,9 +10,7 @@
 
 .map {
 	width: 100%;
-	height: 400px;
-	border: #ccc solid 1px;
-	margin: 20px 0;
+	height: 600px;
 
 	/* fixes potential theme css conflict */
 	img {
@@ -43,11 +41,23 @@
 	}
 }
 
+.nearby {
+	padding-bottom: 6rem;
+}
 
 .page:not(.home) {
 
 	#banner {
 		height: 65vh;
+	}
+
+	#primary {
+		
+		article {
+			text-align: center;
+			max-width: 70%;
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -303,6 +313,63 @@
 		}
 	}
 
+	.quicknav {
+
+		li {
+			display: inline-block;
+			width: 25%;
+			text-align: center;
+			vertical-align: top;
+			margin: 0;
+			cursor: pointer;
+
+			&.active {
+				font-weight: 600;
+			}
+		}
+
+		&.fix {
+			background: white;
+			z-index: 1;
+			border-bottom: 2px solid $other-blue;
+		}
+	}
+
+	.quick-stats {
+		border-top: 1px solid $other-blue;
+		border-bottom: 1px solid $other-blue;
+		padding: 2rem 0;
+		margin: 3rem 0;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			li {
+				margin: 0;
+				display: inline-block;
+				width: calc(100% / 6);
+				box-sizing: border-box;
+				padding: 0 1rem;
+				text-align: center;
+
+				svg {
+					display: inline-block;
+					max-width: 48px;
+					width: auto;
+					stroke: $other-blue !important;
+				}
+
+				h3, h4 {
+					margin: 0;
+					font-size: 2rem;
+					color: $dark-blue;
+				}
+			}
+		}
+	}
+
 	#features {
 		background-color: $light-grey;
 		padding: 8rem 0;
@@ -361,8 +428,8 @@
 
 			.popularfeats {
 				margin-top: 4rem;
-				border-top: 1px solid blue;
-				border-bottom: 1px solid blue;
+				border-top: 1px solid $other-blue;
+				border-bottom: 1px solid $other-blue;
 				padding: 2rem 0;
 
 				h3 {
@@ -408,6 +475,38 @@
 		float: right;
 		will-change: min-height;
 
+		.wpsbc-calendars-wrapper.wpsbc-legend-position-side {
+			padding-right: 0 !important;
+			width: 100% !important;
+			max-width: 100% !important;
+		}
+
+		.wpsbc-container[data-columns] .wpsbc-calendars {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.wpsbc-container[data-columns] .wpsbc-calendars .wpsbc-calendar {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.wpsbc-calendars-wrapper.wpsbc-legend-position-side .wpsbc-legend .wpsbc-legend-item {
+			display: inline-block;
+			margin-right: 0;
+			width: 50%;
+			margin: 0 0 5px 0;
+			vertical-align: middle;
+		}
+
+		.wpsbc-calendars-wrapper.wpsbc-legend-position-side .wpsbc-legend {
+			position: relative;
+			top: 0;
+			right: 0;
+			width: 100%;
+			margin-top: 0;
+		}
+
 		.sidebar__inner{
 			transform: translate(0, 0); /* For browsers don't support translate3d. */
 			transform: translate3d(0, 0, 0);
@@ -427,8 +526,27 @@
 		}
 
 		.wrapper {
-			background-color: $lilac-grey;
+			// background-color: $lilac-grey;
+			background-color: #f9f9f9;
 			padding: 2rem;
+
+			> a {
+				background-color: $lilac;
+				display: block;
+				color: white;
+				text-align: center;
+				text-decoration: none;
+				font-size: 1.4rem;
+				padding: 1rem;
+				margin-bottom: 0.5rem;
+				border-radius: $global-radius;
+				font-weight: 700;
+
+				&:last-of-type {
+					background-color: $pale-lilac;
+					margin-bottom: 0;
+				}
+			}
 		}
 
 		h4 {
@@ -511,22 +629,267 @@
 				}
 			}
 		}
+	}
+}
 
-		a {
-			background-color: $lilac;
-			display: block;
-			color: white;
+.page-template-properties {
+
+	#primary {
+		
+		article {
 			text-align: center;
-			text-decoration: none;
-			font-size: 1.4rem;
-			padding: 1rem;
-			margin-bottom: 0.5rem;
-			border-radius: $global-radius;
-			font-weight: 700;
+			max-width: 70%;
+			margin: 0 auto;
+		}
 
-			&:last-of-type {
-				background-color: $pale-lilac;
-				margin-bottom: 0;
+		.submitone {
+			background: $bright-purple;
+			color: white;
+			padding: 3rem;
+			text-align: center;
+
+			h3 {
+				color: white;
+				text-transform: uppercase;
+				font-size: 2.7rem;
+				line-height: 1.2;
+				font-weight: 500;
+			}
+
+			a {
+				display: block;
+				margin-top: 2rem;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-weight: 500;
+				color: white;
+				background: purple;
+				padding: 1.4rem;
+				line-height: 1;
+			}
+		}
+
+		.villas {
+
+			ul {
+				margin: 0;
+				list-style: none;
+
+				li {
+					margin: 0;
+
+					margin: 0 3rem 3rem 0;
+					width: calc(32.9% - 1.5rem);
+					display: inline-block;
+					vertical-align: top;
+					box-sizing: border-box;
+					padding: 0;
+
+					&:nth-child(3n) {
+						margin-right: 0;
+					}
+
+					img {
+						display: block;
+						width: 100%;
+						margin-bottom: 2rem;
+					}
+
+					header {
+						padding: 0 2rem;
+						box-sizing: border-box;
+
+						h3 {
+							font-weight: 500;
+							color: $bright-purple;
+						}
+
+						span {
+							width: 50%;
+							display: inline-block;
+							vertical-align: middle;
+							font-size: 2.2rem;
+
+							&:last-of-type {
+								text-align: right;
+								color: $dark-blue;
+								font-size: 2rem;
+								text-transform: uppercase;
+							}
+						}
+					}
+
+					a {
+						display: inline-block;
+						padding: 1rem 2.4rem;
+						color: white;
+						text-decoration: none;
+						font-size: 2.4rem;
+						box-sizing: border-box;
+						background-color: $pale-blue;
+						width: 60%;
+						text-align: center;
+						border-radius: $global-radius;
+
+						&.enquire {
+							background-color: $lilac;
+							width: 38%;
+							margin-left: 2%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+#reviews {
+	padding: 60px 0;
+
+	h1, h2 {
+		color: $bright-purple;
+		font-size: 5rem;
+		margin-bottom: 4rem;
+	}
+
+	.post_rvws {
+		background: #f9f9f9;
+		padding: 3rem;
+		margin-bottom: 3rem;
+	}
+
+	textarea {
+		width: 100%;
+		padding: 1rem;
+		border-radius: 0;
+		height: 100px;
+	}
+
+	input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+		width: 100%;
+		padding: 1rem;
+		border-radius: 0;
+	}
+
+	.glsr-field label[for^=terms] {
+		font-size: 13px;
+		font-weight: 400;
+	}
+
+	.button.button-primary, button.button-primary {
+		border-radius: 0;
+		margin-top: 2rem;
+	}
+}
+
+
+.submit-your-villa {
+
+	#primary {
+
+		.gform_wrapper {
+			background: white;
+			padding: 6rem;
+			text-align: center;
+			box-sizing: border-box;
+			margin: 0;
+
+			ul.gform_fields li.gfield {
+				padding-right: 0;
+				margin: 0;
+
+				.ginput_container {
+					margin-top: 0;
+				}
+			}
+
+			label.gfield_label {
+				font-weight: 300;
+			}
+
+			.instruction {
+				display: none;
+			}
+
+			form {
+
+				h2, h3, h1 {
+					text-align: center;
+					font-size: 3rem;
+					margin: 0 0 6rem 0;
+					text-transform: capitalize;
+					font-weight: 300;
+				}
+
+				#gform_page_1_1 {
+
+					li#field_1_3, li#field_1_4 {
+						display: inline-block;
+						width: 50%;
+						text-align: center;
+
+						label {
+							background-size: 32px auto;
+							background-repeat: no-repeat;
+							background-position: center top;
+							padding: 35px 0 0 0;
+							margin: 0;
+
+							span.gfield_required {
+								display: none;
+							}
+						}
+
+						input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
+							font-size: 12rem;
+							padding: 0;
+							height: auto;
+							line-height: 1;
+							font-weight: 500;
+							text-align: center;
+							outline: 0;
+							box-shadow: none;
+							color: transparent;
+							text-shadow: 0 0 0 black;
+							border: 0;
+
+							&:focus, &:active, &:hover {
+								outline: 0;
+								outline: 0;
+								box-shadow: none;
+								border: 0;
+							}
+						}
+					}
+
+					li#field_1_3 {
+
+						label {
+							background-image: url(assets/img/bed-blue.svg);
+						}
+					}
+
+					li#field_1_4 {
+
+						label {
+							background-image: url(assets/img/bathrooms-blue.svg);
+						}
+					}
+				}
+			}
+
+			#gform_page_1_2 {
+
+				h2 {
+					margin-bottom: 0;
+				}
+
+				.pre-info {
+					text-align: center;
+					color: #888;
+					margin-bottom: 6rem;
+				}
 			}
 		}
 	}

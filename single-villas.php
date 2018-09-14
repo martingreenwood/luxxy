@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<section id="banner" class="parallax-window" data-bleed="50" data-parallax="scroll" data-image-src="<?php the_field( 'banner_image' );; ?>"></section>
+	<section id="banner" class="parallax-window" data-bleed="50" data-parallax="scroll" data-image-src="<?php the_field( 'banner_image' ); ?>"></section>
 
 	<section id="site_wrap">
 
@@ -30,7 +30,11 @@ get_header(); ?>
 						<div class="calendar sidebar__innner">
 							<div class="wrapper">
 								<h4>Check Availability</h4>
-								<?php echo do_shortcode( '[sbc title="no"]' ); ?>
+								<?php echo do_shortcode( '[wpsbc id="1" title="no" legend="yes" dropdown="yes" start="1" display="1" language="auto" month="0" year="0" jump="no" history="1" tooltip="3" theme="classic" weeknumbers="no" highlighttoday="no"]' ); ?>
+								<!-- <div class="key">
+									<div class="avail"><span></span>Available</div>
+									<div class="booked"><span></span>Booked</div>
+								</div> -->
 								<a href="<?php echo home_url( '/booking-enquiry' ); ?>" title="">Send booking enquiry</a>
 								<a href="<?php echo home_url( '/ask-a-question' ); ?>" title="">Ask the owner a question</a>
 							</div>
@@ -69,64 +73,99 @@ get_header(); ?>
 						<?php endif; ?>
 
 						<?php $location_types = get_field('location_type'); ?>
-						<?php if ($location_types): ?>
+						<?php
+						if ($location_types): ?>
 						<dl>
 							<dt>Location Type:</dt><!--
 							--><dd>
 								<?php foreach( $location_types as $location_type ): ?>
-									<span><?php echo $location_type; ?></span>
+									<span><?php echo $location_type->name ?></span>
 								<?php endforeach; ?>
 							   </dd>
 						</dl>
 						<?php endif; ?>
 
-						<?php $general_incs = get_field( 'general'); ?>
-						<?php if ($general_incs): ?>
-						<dl>
-							<dt>General:</dt><!--
-							--><dd>
-								<?php foreach( $general_incs as $general ): ?>
-									<span><?php echo $general; ?></span>
-								<?php endforeach; ?>
-							   </dd>
-						</dl>
+						<?php if ( have_rows( 'rooms' ) ) : ?>
+							<?php while ( have_rows( 'rooms' ) ) : the_row(); ?>
+								
+								<?php if ( have_rows( 'room_type' ) ) : ?>
+									<ul>
+										<?php while ( have_rows( 'room_type' ) ) : the_row(); ?>
+											<dl>
+												<?php $roomname = get_sub_field( 'name' ); ?>
+												<dt><?php the_sub_field( 'name' ); ?></dt><!--
+												--><dd>
+													<?php if ( have_rows( 'room' ) ) : ?>
+														<?php while ( have_rows( 'room' ) ) : the_row(); ?>
+															<p>
+																<?php if ($roomname !== get_sub_field( 'type' )): ?>
+																	<strong><?php the_sub_field( 'type' ); ?></strong><br>
+																<?php endif ?>
+																<?php the_sub_field( 'features' ); ?>
+															</p>
+														<?php endwhile; ?>
+													<?php endif; ?>
+												   </dd>
+											</dl>
+										<?php endwhile; ?>
+									</ul>
+								<?php endif; ?>
+
+							<?php endwhile; ?>
 						<?php endif; ?>
 
-						<?php $kitchen_incs = get_field( 'kitchen'); ?>
-						<?php if ($kitchen_incs): ?>
+						<?php $notes = get_field('notes'); ?>
+						<?php
+						if ($notes): ?>
 						<dl>
-							<dt>Kitchen:</dt><!--
+							<dt>Notes:</dt><!--
 							--><dd>
-								<?php foreach( $kitchen_incs as $kitchen ): ?>
-									<span><?php echo $kitchen; ?></span>
-								<?php endforeach; ?>
-							   </dd>
-						</dl>
-						<?php endif; ?>
-
-						<?php $dining_incs = get_field( 'dining'); ?>
-						<?php if ($dining_incs): ?>
-						<dl>
-							<dt>Dining:</dt><!--
-							--><dd>
-								<?php foreach( $dining_incs as $dining ): ?>
-									<span><?php echo $dining; ?></span>
-								<?php endforeach; ?>
+									<?php echo $notes ?>
 							   </dd>
 						</dl>
 						<?php endif; ?>
 
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div id="reviews">
+			<div class="container">
 				<div class="row">
 					<div class="columns seven">
-						// Reviews
+						<h2>Reviews</h2>
+						<div class="post_rvws">
+							<?php echo do_shortcode( '[site_reviews_form assign_to="post_id" id="jl3w0ar7" hide="title"]' ); ?>
+						</div>
+						<div class="rvws">
+							<?php echo do_shortcode( '[site_reviews assigned_to="post_id" schema="false" id="jl3w20ra" hide="avatar"]' ); ?>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 	</section>
+
+	<div id="mapps">
+		<div class="row">
+			<div class="columns">
+				<?php $location = get_field('location'); if( !empty($location) ): ?>
+				<div class="map">
+					<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>"></div>
+				</div>
+				<?php endif; ?>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row nearby">
+				<div class="columns eight">
+					<?php the_field( 'location_text' ); ?>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<?php get_template_part( 'template-parts/page', 'how-it-works' ); ?>
 
